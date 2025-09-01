@@ -43,10 +43,16 @@
             .selector-bar {
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 10px;
+                gap: 5px;
+                padding: 10px 5px;
             }
             .lang-button {
-                min-width: 70px;
+                flex-basis: 18%; /* Ensures max 5 icons per row */
+                min-width: 60px;
+            }
+            .gallery-container {
+                /* Adjust height for potentially taller selector bar */
+                height: calc(100vh - 220px);
             }
         }
     </style>
